@@ -35,3 +35,9 @@
   margin: 0 auto;
   background-color: #010157;
 }
+
+@media (max-width: 600px) {
+  .App .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}

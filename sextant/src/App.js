@@ -3,6 +3,7 @@ import './App.css';
 // components
 import Exhibit from './components/Exhibit';
 import IPCollector from './components/IPCollector';
+import PylonLatency from './components/PylonLatency';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Exhibit>
         <Exhibit title="IPv6 Address">
           <IPCollector isIPv4={false} />
+        </Exhibit>
+        <Exhibit title="Latency">
+          <PylonLatency />
         </Exhibit>
       </div>
     </div>
