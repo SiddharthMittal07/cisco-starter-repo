@@ -2,6 +2,7 @@ import './App.css';
 
 // components
 import Exhibit from './components/Exhibit';
+import IPCollector from './components/IPCollector';
 
 function App() {
   return (
@@ -11,7 +12,12 @@ function App() {
       </header>
 
       <div className="content">
-        <Exhibit />
+        <Exhibit title="IPv4 Address">
+          <IPCollector isIPv4={true} />
+        </Exhibit>
+        <Exhibit title="IPv6 Address">
+          <IPCollector isIPv4={false} />
+        </Exhibit>
       </div>
     </div>
   );
